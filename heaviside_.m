@@ -32,13 +32,13 @@ end
 Y = zeros(size(X),'like',X);
 Y(X > 0) = 1;
 if any(X(:)==0) 
-   if isempty(hAtOrigin)
-      try
-         hAtOrigin = cast(sympref('HeavisideAtOrigin'),'like',X);
-      catch 
-         error('Function call ''heaviside(0)'' yields a symbolic object. Use ''sympref("HeavisideAtOrigin", v)'' with some numeric value v to change ''heaviside(0)'' to v.');
-      end
-   end
-   Y(X==0) = hAtOrigin;
+%    if isempty(hAtOrigin)
+%       try
+%          hAtOrigin = cast(sympref('HeavisideAtOrigin'),'like',X);
+%       catch ME
+%          rethrow(ME);
+%       end
+%    end
+   Y(X==0) = 1;%hAtOrigin;
 end
 Y(isnan(X) | imag(X) ~= 0 ) = NaN;
