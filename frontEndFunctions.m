@@ -807,11 +807,11 @@ methods (Static)
                   else
                      method_params.select_peaks.value = 'positive';
                      [voltage, Rest, prev_params] = rescaleVoltage(tseries, method, method_params, h.options);
-                     voltage = voltage.*heaviside(voltage);
+                     voltage = voltage.*heaviside_(voltage);
                      method_params.select_peaks.value = 'negative';
                      [nvoltage, Nest] = rescaleVoltage(tseries, method, method_params, h.options);
                      nvoltage = -nvoltage;
-                     nvoltage = nvoltage.*heaviside(nvoltage);
+                     nvoltage = nvoltage.*heaviside_(nvoltage);
                      voltage = voltage - nvoltage;
                   end
                   if isempty(voltage)
