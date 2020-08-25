@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="2150896024" file="C:\Users\artemios\Documents\GitHub\SpikeExtractionToolGit\SpikeExtractionToolStandaloneWindows.prj" location="C:\Users\artemios\Documents\GitHub\SpikeExtractionToolGit" name="SpikeExtractionToolStandaloneWindows" preferred-package-location="C:\Users\artemios\OneDrive - The University of Melbourne\PostDoc\Code\SET Production\Standalone\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="3769670716" file="C:\Users\artemios\Documents\GitHub\SpikeExtractionToolGit\SpikeExtractionToolStandaloneWindows.prj" location="C:\Users\artemios\Documents\GitHub\SpikeExtractionToolGit" name="SpikeExtractionToolStandaloneWindows" preferred-package-location="C:\Users\artemios\OneDrive - The University of Melbourne\PostDoc\Code\SET Production\Standalone\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SpikeExtractionTool</param.appname>
     <param.icon>${PROJECT_ROOT}\SpikeExtractionToolStandaloneWindows_resources\icon.ico</param.icon>
     <param.icons>
@@ -29,15 +29,15 @@
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
     <param.support.packages />
-    <param.web.mcr>true</param.web.mcr>
-    <param.package.mcr>false</param.package.mcr>
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
     <param.web.mcr.name>SpikeExtractionTool_Installer</param.web.mcr.name>
     <param.package.mcr.name>SpikeExtractionTool_Installer_Runtime</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>
     <param.create.log>true</param.create.log>
-    <param.log.file>setLog</param.log.file>
+    <param.log.file>setLog.log</param.log.file>
     <param.native.matlab>false</param.native.matlab>
     <param.checkbox>false</param.checkbox>
     <param.example />
@@ -59,8 +59,6 @@
       <param.user.defined.mcr.options />
       <param.target.type />
       <param.support.packages />
-      <param.web.mcr />
-      <param.package.mcr />
       <param.no.mcr />
       <param.no.mcr.name />
       <param.windows.command.prompt />
